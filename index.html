@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <style>
+        .h-150 {
+            height: 150px
+        }
+
+        img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="card w-50 jus">
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex w-25 flex-column add-image mr-5">
+                    </div>
+                    <div class="d-flex w-50">
+                        <img alt="" class="img-fluid" id="clickable-image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="d-flex flex-column text-center counter-name">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="d-flex flex-column w-25 justify-content-center">
+                <button class="btn btn-primary" id="admin">Admin</button>
+                <div class="d-none" id="admin-panel">
+                    <div class="pt-3 d-flex flex-column text-center align-items-center">
+                        <input type="text" class="mb-3" id="img" />
+                        <input type="text" class="mb-3" id="name" />
+                        <input type="text" class="mb-3" id="counter" />
+                        <button class="btn btn-primary w-50" id="apply">apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts/script.js"></script>
+
+
+</html>
